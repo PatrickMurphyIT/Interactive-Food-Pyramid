@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./assignment-01.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Murphy - 20253028 - assignment-01</title>
+</head>
+
+<body>
+    <div id="wholePyramid">
+        <!-- top of pyramid -->
+        <div id="triangle">
+
+        </div>
+        <div id="shelf6">
+            <!-- - button -->
+            <button onClick="decrement6()" id="decrement" type="buttons">-</button>
+            <!-- total shelf items -->
+            <button class="totalValue" id="counter6">0</button>
+            <!-- + button -->
+            <button onClick="increment6()" id="increment" type="buttons">+</button>
+        </div>
+        <div id="shelf5">
+            <button onClick="decrement5()" id="decrement" type="buttons">-</button>
+            <button class="totalValue" id="counter5">0</button>
+            <button onClick="increment5()" id="increment" type="buttons">+</button>
+        </div>
+        <div id="shelf4">
+            <button onClick="decrement4()" id="decrement" type="buttons">-</button>
+            <button class="totalValue" id="counter4">0</button>
+            <button onClick="increment4()" id="increment" type="buttons">+</button>
+
+        </div>
+        <div id="shelf3">
+            <button onClick="decrement3()" id="decrement" type="buttons">-</button>
+            <button class="totalValue" id="counter3">0</button>
+            <button onClick="increment3()" id="increment" type="buttons">+</button>
+        </div>
+        <div id="shelf2">
+            <button onClick="decrement2()" id="decrement" type="buttons">-</button>
+            <button class="totalValue" id="counter2">0</button>
+            <button onClick="increment2()" id="increment" type="buttons">+</button>
+        </div>
+        <div id="shelf1">
+            <button onClick="decrement1()" id="decrement" type="buttons">-</button>
+            <button class="totalValue" id="counter1">0</button>
+            <button onClick="increment1()" id="increment" type="buttons">+</button>
+        </div>
+        <!-- bottom of pyramid -->
+    </div>
+    <br>
+    <!-- date entry box and output -->
+    <div class="dateDiv">
+        <label><strong>My Food Pyramid</strong></label>
+        <input id="dateEntry" type="date">
+        <button class="dateButton" onClick="selectDate()">Record Date</button>
+        <h1>Date of Entry: </h1>
+        <!-- placeholder for date -->
+        <h1 id="dateView">--/--/----</h1>
+    </div>
+    <!-- guidelines buttons -->
+    <div class="rdaButtonDiv">
+        <button onClick="clickAdultRDA()" class="guidelineButton active" id="adultGuidelinesButton">Adult
+            Guidelines</button>
+        <button onClick="clickChildRDA()" class="guidelineButton" id="childGuidelinesButton">Children
+            Guidelines</button>
+    </div>
+    </div>
+    <!-- guideline amounts -->
+    <h3 id="guidelinesHeading">
+        <center>Recommended Guideline Amounts From Safefood.net</center>
+    </h3>
+    <div class="rdaGuidleines">
+
+        <div id="adult">
+            <h3>Adult Guidelines Ages 5 and up<br><em style="color: red;">Shelf 6:</em> not every day<br><em style="color: orange;">Shelf 5:</em> in small
+                amounts<br><em style="color: rgb(153, 153, 32);">Shelf 4:</em> 2 servings per day<br><em style="color: blue;">Shelf 3:</em> 3-5 servings per day
+                <br><em style="color: burlywood;">Shelf 2:</em> 3-7 servings per day<br><em style="color: green;">Shelf 1:</em> 5-7 servings per day
+            </h3>
+        </div>
+        <div id="child">
+            <h3>Children Guidelines Ages 1-4<br><em style="color: red;">Shelf 6:</em> max once per week<br><em style="color: orange;">Shelf
+                    5:</em> in very
+                small amounts<br><em style="color: rgb(153, 153, 32);">Shelf 4:</em> 2-4 servings per day<br><em style="color: blue;">Shelf 3:</em> 3 servings per day
+                <br><em style="color: burlywood;">Shelf 2:</em> 2-5 servings per day<br><em style="color: green;">Shelf 1:</em> 3-6 servings per day
+            </h3>
+        </div>
+    </div>
+    <script src="./assignment-01.js"></script>
+</body>
+
+</html>
